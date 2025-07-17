@@ -1,0 +1,89 @@
+body { font-family: 'Inter', sans-serif; } 
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+.focus\:not-sr-only:focus:not(:focus-visible) {
+  display: none;
+}
+.focus\:not-sr-only:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+  background: #fce7f3;
+  color: #be185d;
+  z-index: 1000;
+} 
+
+/* Team Card Custom Styles */
+.team-card {
+  background: linear-gradient(135deg, #fce7f3 0%, #e0e7ff 100%); /* pink-50 to blue-100 */
+  box-shadow: 0 4px 24px 0 rgba(236, 72, 153, 0.08), 0 1.5px 6px 0 rgba(59, 130, 246, 0.06);
+  transition: transform 0.3s cubic-bezier(.4,0,.2,1), box-shadow 0.3s cubic-bezier(.4,0,.2,1);
+}
+.team-card:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px #f9a8d4, 0 4px 24px 0 rgba(236, 72, 153, 0.08);
+}
+.team-card:hover, .team-card:focus {
+  transform: scale(1.05);
+  box-shadow: 0 8px 32px 0 rgba(236, 72, 153, 0.18), 0 2px 8px 0 rgba(59, 130, 246, 0.10);
+}
+.team-img {
+  border-width: 4px;
+  border-style: solid;
+  transition: border-color 0.3s cubic-bezier(.4,0,.2,1);
+}
+.team-card:hover .team-img, .team-card:focus .team-img {
+  border-color: #f472b6; /* pink-400 */
+} 
+
+/* Feature Card Custom Styles */
+.features-card {
+  background: linear-gradient(135deg, #e0e7ff 0%, #fce7f3 100%); /* blue-100 to pink-50 */
+  box-shadow: 0 4px 24px 0 rgba(59, 130, 246, 0.08), 0 1.5px 6px 0 rgba(236, 72, 153, 0.06);
+  transition: transform 0.3s cubic-bezier(.4,0,.2,1), box-shadow 0.3s cubic-bezier(.4,0,.2,1);
+}
+.features-card:hover, .features-card:focus {
+  transform: scale(1.04);
+  box-shadow: 0 8px 32px 0 rgba(59, 130, 246, 0.14), 0 2px 8px 0 rgba(236, 72, 153, 0.10);
+} 
+
+/* Animated gradient for About section */
+.about-animated-gradient {
+  background: linear-gradient(120deg, #e0e7ff, #fce7f3, #f0f9ff, #f9a8d4);
+  background-size: 400% 400%;
+  animation: aboutGradientMove 16s ease-in-out infinite;
+}
+@keyframes aboutGradientMove {
+  0% { background-position: 0% 50%; }
+  25% { background-position: 50% 100%; }
+  50% { background-position: 100% 50%; }
+  75% { background-position: 50% 0%; }
+  100% { background-position: 0% 50%; }
+}
+
+#about-particles {
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Ensure About section content is above background and particles */
+#about .relative.z-20 { z-index: 20; }
+
+/* Decorative border for About content card */
+#about .rounded-3xl { border-radius: 1.5rem; }
+#about .border-4 { border-width: 4px; }
+#about .border-pink-100 { border-color: #fde7f3; } 

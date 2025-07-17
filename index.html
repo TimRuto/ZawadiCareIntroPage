@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zawadi Care - Pregnancy Tracker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient-to-b from-pink-50 via-blue-50 to-white text-gray-800">
+  <a href="#home" class="sr-only focus:not-sr-only absolute left-2 top-2 bg-pink-100 text-pink-700 px-4 py-2 rounded z-50">Skip to main content</a>
+  <!-- Navigation Bar -->
+  <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur shadow-sm" role="navigation" aria-label="Main Navigation">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
+      <div class="text-2xl font-bold text-pink-600 tracking-wide">Zawadi <span class="text-blue-500">Care 👩‍⚕️</span></div>
+      <ul class="hidden md:flex space-x-8 text-base font-medium">
+        <li><a href="#home" class="hover:text-pink-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-pink-400">Home</a></li>
+        <li><a href="#about" class="hover:text-pink-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-pink-400">About</a></li>
+        <li><a href="#features" class="hover:text-pink-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-pink-400">Features</a></li>
+        <li><a href="#support" class="hover:text-pink-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-pink-400">Support</a></li>
+        <li><a href="#team" class="hover:text-pink-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-pink-400">Team</a></li>
+      </ul>
+      <button class="md:hidden flex items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-pink-400" id="menu-btn" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+        <svg class="w-7 h-7 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="md:hidden hidden px-4 pb-4" id="mobile-menu" role="menu">
+      <ul class="space-y-2 text-base font-medium">
+        <li><a href="#home" class="block hover:text-pink-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-pink-400">Home</a></li>
+        <li><a href="#about" class="block hover:text-pink-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-pink-400">About</a></li>
+        <li><a href="#features" class="block hover:text-pink-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-pink-400">Features</a></li>
+        <li><a href="#support" class="block hover:text-pink-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-pink-400">Support</a></li>
+        <li><a href="#team" class="block hover:text-pink-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-pink-400">Team</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative min-h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1710897872956-8c68ae37c64a?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+    <div class="absolute inset-0 bg-white/70 backdrop-blur-sm"></div>
+    <div class="relative z-10 text-center max-w-2xl mx-auto py-24">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-pink-700 mb-6">Your Journey to Motherhood, Informed and <span class="text-pink-500">Empowered</span></h1>
+      <a href="#launch" class="inline-block bg-pink-500 text-white text-base sm:text-lg px-6 sm:px-8 py-3 rounded-full shadow-lg hover:bg-pink-600 transition font-semibold focus:outline-none focus-visible:ring-2 focus-visible:ring-pink-400">Go to Web App</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 relative overflow-hidden">
+    <!-- Animated Gradient Background -->
+    <div class="about-animated-gradient absolute inset-0 w-full h-full z-0"></div>
+    <!-- Soft SVG Blobs -->
+    <svg class="absolute top-[-80px] left-[-80px] w-72 h-72 opacity-30 z-0" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><path fill="#f9a8d4" d="M44.8,-67.2C56.6,-59.6,62.7,-42.2,68.2,-25.7C73.7,-9.2,78.6,6.4,74.2,19.2C69.8,32,56.1,42,42.2,54.2C28.3,66.4,14.1,80.8,-1.2,82.2C-16.5,83.6,-33,72,-44.2,58.1C-55.4,44.2,-61.3,28,-67.2,9.7C-73.1,-8.6,-78.9,-29.1,-71.2,-41.2C-63.5,-53.3,-42.3,-57,-24.1,-62.2C-5.9,-67.4,9.3,-74.9,24.7,-75.2C40.1,-75.5,56.6,-67.2,44.8,-67.2Z" transform="translate(100 100)" /></svg>
+    <svg class="absolute bottom-[-60px] right-[-60px] w-56 h-56 opacity-20 z-0" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><path fill="#a5b4fc" d="M44.8,-67.2C56.6,-59.6,62.7,-42.2,68.2,-25.7C73.7,-9.2,78.6,6.4,74.2,19.2C69.8,32,56.1,42,42.2,54.2C28.3,66.4,14.1,80.8,-1.2,82.2C-16.5,83.6,-33,72,-44.2,58.1C-55.4,44.2,-61.3,28,-67.2,9.7C-73.1,-8.6,-78.9,-29.1,-71.2,-41.2C-63.5,-53.3,-42.3,-57,-24.1,-62.2C-5.9,-67.4,9.3,-74.9,24.7,-75.2C40.1,-75.5,56.6,-67.2,44.8,-67.2Z" transform="translate(100 100)" /></svg>
+    <!-- Patterned Overlay -->
+    <svg class="absolute inset-0 w-full h-full z-0 opacity-10" width="100%" height="100%"><defs><pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="2" fill="#f472b6" /></pattern></defs><rect width="100%" height="100%" fill="url(#dots)" /></svg>
+    <!-- Floating Particles Container -->
+    <div id="about-particles" class="absolute inset-0 w-full h-full pointer-events-none z-10"></div>
+    <div class="relative z-20 max-w-3xl mx-auto flex flex-col items-center gap-8 px-4 text-center rounded-3xl border-4 border-pink-100 shadow-xl bg-white/80 backdrop-blur-md">
+      <!-- Decorative Icons -->
+      <div class="flex justify-center gap-4 mb-2">
+        <span class="inline-block"><img src="https://img.icons8.com/fluency/32/000000/heart-with-pulse.png" alt="Heart icon" class="inline w-8 h-8"></span>
+        <span class="inline-block"><img src="https://img.icons8.com/fluency/32/000000/stethoscope.png" alt="Stethoscope icon" class="inline w-8 h-8"></span>
+        <span class="inline-block"><img src="https://img.icons8.com/?size=100&id=81172&format=png&color=000000" alt="Baby footprint icon" class="inline w-8 h-8"></span>
+      </div>
+      <h2 class="text-3xl font-bold text-pink-600 mb-2 drop-shadow-lg">About Zawadi Care</h2>
+      <p class="text-lg mb-2">Zawadi Care is dedicated to supporting expectant mothers in Kenya and Sub-Saharan Africa. Our mission is to provide a safe, educational, and empowering space for every pregnancy journey. With trusted information, tools, and access to healthcare professionals, we help you make informed decisions for you and your baby.</p>
+      <!-- Highlight Box / Quote -->
+      <div class="bg-pink-50 border-l-4 border-pink-400 rounded-xl shadow p-4 mx-auto max-w-xl text-pink-700 font-semibold italic">“Empowering every pregnancy journey with care, knowledge, and community.”</div>
+      <p class="text-pink-500 font-semibold">Safety. Education. Empowerment.</p>
+      <!-- Photo Collage / Illustration Accent -->
+      <div class="flex justify-center gap-2 mt-2">
+        <img src="https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg?auto=compress&w=60&q=80" alt="Collage 1" class="w-12 h-12 rounded-full object-cover border-2 border-pink-200">
+        <img src="https://images.pexels.com/photos/1648376/pexels-photo-1648376.jpeg?auto=compress&w=60&q=80" alt="Collage 2" class="w-12 h-12 rounded-full object-cover border-2 border-blue-200">
+        <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=60&q=80" alt="Collage 3" class="w-12 h-12 rounded-full object-cover border-2 border-pink-200">
+      </div>
+    </div>
+    <!-- Wavy SVG Divider -->
+    <svg class="absolute bottom-0 left-0 w-full h-16 z-30" viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#fce7f3" d="M0,32 C360,80 1080,0 1440,48 L1440,80 L0,80 Z" /></svg>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-16 bg-blue-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-blue-600 mb-10">Features</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Feature Card 1 -->
+        <div class="features-card rounded-xl shadow p-6 flex flex-col items-center">
+          <img src="https://img.icons8.com/?size=100&id=I9LtanbJpCSJ&format=png&color=000000" alt="Notebook icon for symptom logging" class="w-16 h-16 mb-4">
+          <h3 class="text-xl font-semibold mb-2">Symptom Logging</h3>
+          <p class="text-center">Easily track and log your daily symptoms for better health monitoring.</p>
+        </div>
+        <!-- Feature Card 2 -->
+        <div class="features-card rounded-xl shadow p-6 flex flex-col items-center">
+          <img src="https://img.icons8.com/fluency/96/000000/calendar--v2.png" alt="Calendar icon for weekly insights" class="w-16 h-16 mb-4">
+          <h3 class="text-xl font-semibold mb-2">Weekly Pregnancy Insights</h3>
+          <p class="text-center">Receive personalized updates and tips for every week of your pregnancy.</p>
+        </div>
+        <!-- Feature Card 3 -->
+        <div class="features-card rounded-xl shadow p-6 flex flex-col items-center">
+          <img src="https://img.icons8.com/fluency/96/000000/appointment-reminders.png" alt="Appointment reminder icon" class="w-16 h-16 mb-4">
+          <h3 class="text-xl font-semibold mb-2">Appointment Scheduling</h3>
+          <p class="text-center">Schedule and manage your prenatal appointments with ease.</p>
+        </div>
+        <!-- Feature Card 4 -->
+        <div class="features-card rounded-xl shadow p-6 flex flex-col items-center">
+          <img src="https://img.icons8.com/?size=100&id=1dwl4AbbCiMQ&format=png&color=000000" alt="Doctor icon for feedback integration" class="w-16 h-16 mb-4">
+          <h3 class="text-xl font-semibold mb-2">Doctor Feedback Integration</h3>
+          <p class="text-center">Connect with certified doctors for feedback and guidance.</p>
+        </div>
+        <!-- Feature Card 5 -->
+        <div class="features-card rounded-xl shadow p-6 flex flex-col items-center">
+          <img src="https://img.icons8.com/fluency/96/000000/combo-chart.png" alt="Combo chart icon for progress tracking" class="w-16 h-16 mb-4">
+          <h3 class="text-xl font-semibold mb-2">Visual Progress Tracking</h3>
+          <p class="text-center">See your pregnancy progress visually with easy-to-understand charts.</p>
+        </div>
+        <!-- Feature Card 6: AI Chatbot Doctor -->
+        <div class="features-card rounded-xl shadow p-6 flex flex-col items-center">
+          <img src="https://img.icons8.com/?size=100&id=POBc2SrrhhnF&format=png&color=000000" alt="AI Doctor Chatbot icon" class="w-16 h-16 mb-4">
+          <h3 class="text-xl font-semibold mb-2">AI Doctor Chatbot</h3>
+          <p class="text-center">Get instant guidance and answers from our AI-powered doctor chatbot, available 24/7 for your pregnancy questions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="py-16 bg-gradient-to-r from-blue-50 via-pink-50 to-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-pink-600 mb-10">Meet the Engineering Team</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-items-center">
+        <!-- Team Member 0 -->
+         <div class="team-card bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center transition-transform duration-300 hover:scale-105 hover:shadow-pink-200 cursor-pointer">
+          <img src="Dr. Lawrence.jpeg" alt="Grace Achieng" class="w-24 h-24 rounded-full mb-4 object-cover border-4 border-pink-100 team-img">
+          <h3 class="text-xl font-semibold mb-1 text-blue-700">Dr. Lawrence Nderu</h3>
+          <p class="text-pink-500 font-medium mb-2">Principle Consultant</p>
+          <p class="text-center text-gray-600 text-sm">Leads the team and provides guidance.</p>
+        </div>
+        <!-- Team Member 1 -->
+         
+        <div class="team-card bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center transition-transform duration-300 hover:scale-105 hover:shadow-pink-200 cursor-pointer">
+          <img src="Tim2.jpeg" alt="Tim" class="w-24 h-24 rounded-full mb-4 object-cover border-4 border-pink-100 team-img">
+          <h3 class="text-xl font-semibold mb-1 text-blue-700">Tim Kiplimo</h3>
+          <p class="text-pink-500 font-medium mb-2">Frontend Developer</p>
+          <p class="text-center text-gray-600 text-sm">Passionate about user experience and beautiful interfaces.</p>
+        </div>
+        <!-- Team Member 2 -->
+        <div class="team-card bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center transition-transform duration-300 hover:scale-105 hover:shadow-pink-200 cursor-pointer">
+          <img src="Austin.jpeg" alt="Austin" class="w-24 h-24 rounded-full mb-4 object-cover border-4 border-blue-100 team-img">
+          <h3 class="text-xl font-semibold mb-1 text-blue-700">Austin Ben Simiyu</h3>
+          <p class="text-pink-500 font-medium mb-2">Backend Engineer</p>
+          <p class="text-center text-gray-600 text-sm">Loves scalable systems and secure APIs.</p>
+        </div>
+        <!-- Team Member 3 -->
+        <div class="team-card bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center transition-transform duration-300 hover:scale-105 hover:shadow-pink-200 cursor-pointer">
+          <img src="Kish.jpeg" alt="John Paul" class="w-24 h-24 rounded-full mb-4 object-cover border-4 border-pink-100 team-img">
+          <h3 class="text-xl font-semibold mb-1 text-blue-700">John Paul</h3>
+          <p class="text-pink-500 font-medium mb-2">Mobile Developer</p>
+          <p class="text-center text-gray-600 text-sm">Brings Zawadi Care to your fingertips on any device.</p>
+        </div>
+        <!-- Team Member 4 -->
+        <div class="team-card bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center transition-transform duration-300 hover:scale-105 hover:shadow-pink-200 cursor-pointer">
+          <img src="Edwn2.jpeg" alt="Edwin" class="w-24 h-24 rounded-full mb-4 object-cover border-4 border-blue-100 team-img">
+          <h3 class="text-xl font-semibold mb-1 text-blue-700">Edwin Mathiga</h3>
+          <p class="text-pink-500 font-medium mb-2">Frontend Engineer</p>
+          <p class="text-center text-gray-600 text-sm">Ensures smooth deployments and robust infrastructure.</p>
+        </div>
+        <!-- Team Member 5 -->
+        <div class="team-card bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center transition-transform duration-300 hover:scale-105 hover:shadow-pink-200 cursor-pointer">
+          <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&w=200&q=80" alt="Evelyn Njeri" class="w-24 h-24 rounded-full mb-4 object-cover border-4 border-pink-100 team-img">
+          <h3 class="text-xl font-semibold mb-1 text-blue-700">Jerry Junior</h3>
+          <p class="text-pink-500 font-medium mb-2">QA and Survey</p>
+          <p class="text-center text-gray-600 text-sm">Guarantees a bug-free and delightful experience.</p>
+        </div>
+        <!-- Team Member 6 -->
+        <div class="team-card bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center transition-transform duration-300 hover:scale-105 hover:shadow-pink-200 cursor-pointer">
+          <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=200&q=80" alt="Felix Mutua" class="w-24 h-24 rounded-full mb-4 object-cover border-4 border-blue-100 team-img">
+          <h3 class="text-xl font-semibold mb-1 text-blue-700">Ismail</h3>
+          <p class="text-pink-500 font-medium mb-2">Full Stack Engineer</p>
+          <p class="text-center text-gray-600 text-sm">Connects the dots between frontend and backend.</p>
+        </div>
+        <!-- Team Member 7 -->
+        
+      </div>
+    </div>
+  </section>
+  <!-- End Team Section -->
+
+  <!-- Footer -->
+  <footer class="bg-white border-t py-6 mt-8 text-center text-sm text-gray-500">
+    <div class="flex flex-col items-center mb-4">
+      <span class="text-xs text-gray-400 mb-1">In partnership with</span>
+      <div class="flex items-center gap-2 justify-center">
+        <img src="JhubLogo.png" alt="JHub Africa Logo" class="w-10 h-10 object-contain rounded-full bg-blue-100 p-1" />
+        <span class="font-semibold text-blue-700">JHub Africa</span>
+      </div>
+    </div>
+    <div>Contact: <a href="mailto:zawadicare@gmail.com" class="text-pink-500 hover:underline">zawadicare@gmail.com</a></div>
+    <div class="mt-2">&copy; 2025 Zawadi Care. All rights reserved.</div>
+    <div class="mt-2">
+      <a href="#" class="hover:underline">Privacy Policy</a> | <a href="#" class="hover:underline">Terms of Service</a>
+    </div>
+    <div class="mt-2 text-xs text-gray-400">This site is for informational purposes only and does not replace professional medical advice.</div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+  <script src="main.js"></script>
+</body>
+</html> 
